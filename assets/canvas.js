@@ -66,10 +66,15 @@ function draw() {
         ctx.drawImage(images[0], circle.x, circle.y, circle.diameter, circle.diameter);
         circle.x += circle.xVel;
 
+        circle.x += circle.xVel;
+        
         if (circle.x > canvasWidth - circle.diameter|| circle.x < 0) {
             circle.xVel *= -1
         }
 
+        if (circle.y > canvasWidth - circle.diameter|| circle.y < 0) {
+            circle.yVel *= -1
+        }
         requestAnimationFrame(animate);
 
        
