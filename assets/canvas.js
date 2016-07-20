@@ -26,10 +26,7 @@ function loadImages(imagefiles) {
 }
 
 function draw() {
-    var canvas = document.getElementById('myCanvas');
-    var canvasWidth = canvas.width;
-    var canvasHeight = canvas.height;
-
+    
     var circle = {'x': 10, 'y': 10, 'xVel': 2, 'yVel': 5, 'diameter': 35};
 
     var requestAnimationFrame =
